@@ -1,21 +1,23 @@
 # CovidStats
 
-**TODO: Add description**
+**A simple application that uses Elixir macros to create functions that contain Covid-19 statistics for each country as well as a global summary.**
 
-## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `covid_stats` to your list of dependencies in `mix.exs`:
+## Setup
 
 ```elixir
-def deps do
-  [
-    {:covid_stats, "~> 0.1.0"}
-  ]
-end
+cd covid_stats
+mix deps.get
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/covid_stats](https://hexdocs.pm/covid_stats).
+## Running
 
+```elixir
+iex -S mix
+```
+
+## Example
+
+```elixir
+CovidStats.kenya
+CovidStats.global
+```
